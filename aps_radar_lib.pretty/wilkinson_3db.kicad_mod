@@ -1,4 +1,4 @@
-(module wilkinson_3db (layer F.Cu) (tedit 5E5022C6)
+(module wilkinson_3db (layer F.Cu) (tedit 5E61B5DB)
   (fp_text reference TL (at -0.01 -5.42) (layer F.SilkS) hide
     (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
@@ -119,7 +119,9 @@
     (xy -0.690416 -3.819949) (xy -0.609191 -3.880949) (xy -0.522499 -3.934321) (xy -0.430868 -3.979486)
     (xy -0.34206 -4.01349) (xy -0.239758 -4.042446) (xy -0.137692 -4.061245) (xy -0.035761 -4.069888)
     (xy 0.066135 -4.068374)) (layer F.Cu) (width 0.01))
-  (pad 1 smd rect (at -1.83 0.0025) (size 0.3517 0.3517) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 1.83 -0.8725) (size 0.3517 0.3517) (layers F.Cu F.Paste F.Mask))
-  (pad 3 smd rect (at 1.83 0.875) (size 0.3517 0.3517) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at -1.83 0.0025) (size 0.3517 0.3517) (layers F.Cu))
+  (pad 2 smd rect (at 1.83 -0.8725) (size 0.3517 0.3517) (layers F.Cu))
+  (pad 3 smd rect (at 1.83 0.875) (size 0.3517 0.3517) (layers F.Cu))
+  (pad 4 smd roundrect (at 1.23 0.39) (size 0.6 0.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.35))
+  (pad 4 smd roundrect (at 1.23 -0.3875) (size 0.6 0.4) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.275))
 )

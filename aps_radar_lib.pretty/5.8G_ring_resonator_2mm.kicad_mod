@@ -1,4 +1,4 @@
-(module 5.8G_ring_resonator_2mm (layer F.Cu) (tedit 5E378548)
+(module 5.8G_ring_resonator_2mm (layer F.Cu) (tedit 5E61B4D7)
   (fp_text reference FL*** (at 0.02 -6.57) (layer F.SilkS) hide
     (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
@@ -202,6 +202,6 @@
     (xy 5.05991 -2.094716) (xy 5.083521 -2.104338) (xy 5.10663 -2.113719) (xy 5.128768 -2.122668)
     (xy 5.149467 -2.130993) (xy 5.168258 -2.138504) (xy 5.184673 -2.145008) (xy 5.198243 -2.150315)
     (xy 5.2085 -2.154233) (xy 5.214975 -2.156571) (xy 5.217196 -2.157158) (xy 5.219283 -2.153388)) (layer F.Cu) (width 0))
-  (pad 1 smd rect (at -7.02 0) (size 0.346 0.346) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 7.02 0) (size 0.346 0.346) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at -7.02 0) (size 0.346 0.346) (layers F.Cu))
+  (pad 2 smd rect (at 7.02 0) (size 0.346 0.346) (layers F.Cu))
 )

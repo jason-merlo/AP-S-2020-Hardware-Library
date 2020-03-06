@@ -11,7 +11,7 @@ K power-flag
 $ENDCMP
 #
 $CMP +5V25
-D Power symbol creates a global label with name "+5V"
+D Power symbol creates a global label with name "+5V25"
 K power-flag
 $ENDCMP
 #
@@ -22,6 +22,10 @@ $ENDCMP
 $CMP CWX813
 D XTAL OSC XO LVCMOS
 F http://www.conwin.com/datasheets/sm/sm126.pdf
+$ENDCMP
+#
+$CMP HMC540S
+F https://www.analog.com/media/en/technical-documentation/data-sheets/hmc540s.pdf
 $ENDCMP
 #
 $CMP LMX2491RTWR
@@ -38,12 +42,22 @@ K single opamp
 F http://www.ti.com/lit/ds/symlink/opa227.pdf
 $ENDCMP
 #
+$CMP POWER_IN
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP TPS7A90
 F http://www.ti.com/lit/ds/symlink/tps7a90.pdf
 $ENDCMP
 #
 $CMP TPS7A92
 F http://www.ti.com/lit/ds/symlink/tps7a92.pdf
+$ENDCMP
+#
+$CMP TQP5523
+F https://www.mouser.com/datasheet/2/412/TQP5523_Data_Sheet-1506872.pdf
 $ENDCMP
 #
 #End Doc Library
