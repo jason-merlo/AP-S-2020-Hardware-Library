@@ -1,0 +1,13 @@
+(module IC_Taper_0.25_0.35 (layer F.Cu) (tedit 5E65291F)
+  (fp_text reference TL14 (at 0.01 1.125 180) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value ic_taper (at -0.025 -1.4575 180) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_poly (pts (xy -0.5 0) (xy -0.5 -0.11) (xy 0.5 -0.175) (xy 0.5 0)
+    (xy 0.5 0.175) (xy -0.5 0.11) (xy -0.5 0)) (layer F.Cu) (width 0))
+  (pad 1 smd rect (at -0.43 0) (size 0.4 0.25) (layers F.Cu))
+  (pad 2 smd rect (at 0.61 0) (size 0.22 0.35) (layers F.Cu))
+  (pad ~ smd rect (at 0.045 -0.0025) (size 1.3525 1) (layers F.Mask))
+)

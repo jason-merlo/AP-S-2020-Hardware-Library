@@ -274,6 +274,31 @@ X PAD 7 0 -300 200 U 59 59 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# OPA192
+#
+DEF OPA192 U 0 5 Y Y 1 F N
+F0 "U" 50 250 50 H V L CNN
+F1 "OPA192" 50 150 50 H V L CNN
+F2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" 50 50 50 H I C CNN
+F3 "" 50 150 50 H I C CNN
+$FPLIST
+ DIP*W7.62mm*
+ SOIC*3.9x4.9mm*P1.27mm*
+ TO?5*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X NC 1 0 -300 200 U 50 20 1 1 N N
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X V- 4 -100 -300 150 U 50 50 1 1 W
+X NC 5 0 300 200 D 50 20 1 1 N N
+X ~ 6 300 0 100 L 50 50 1 1 O
+X V+ 7 -100 300 150 D 50 50 1 1 W
+X NC 8 100 -300 252 U 50 20 1 1 N N
+ENDDRAW
+ENDDEF
+#
 # OPA227
 #
 DEF OPA227 U 0 5 Y Y 1 F N
@@ -429,6 +454,34 @@ X NC 9 150 -50 100 D 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
+# ic_taper
+#
+DEF ic_taper TL 0 40 Y Y 1 F N
+F0 "TL" 0 150 50 H V C CNN
+F1 "ic_taper" 0 -125 50 H I C CNN
+F2 "aps_radar_lib:IC_Taper" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 5 0 1 0 -50 -25 -50 25 50 50 50 -50 -50 -25 N
+X ~ 1 -100 0 50 R 50 50 1 1 B
+X ~ 2 100 0 50 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# mitered_bend
+#
+DEF mitered_bend TL 0 40 Y Y 1 F N
+F0 "TL" 150 100 50 H V C CNN
+F1 "mitered_bend" 350 0 50 H I C CNN
+F2 "aps_radar_lib:mitered_bend_50" -50 350 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 4 0 1 0 0 50 0 -50 100 -50 0 50 N
+X ~ 1 -50 0 50 R 50 50 1 1 B
+X ~ 2 50 -100 50 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # new_component
 #
 DEF new_component U 0 40 Y Y 1 F N
@@ -463,7 +516,7 @@ ENDDEF
 #
 DEF splitter TL 0 40 Y Y 1 F N
 F0 "TL" 0 200 50 H V C CNN
-F1 "splitter" 0 -200 50 H V C CNN
+F1 "splitter" 0 -210 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -472,6 +525,44 @@ P 5 0 1 0 -150 0 0 0 150 100 0 0 150 -100 N
 X ~ 1 -250 0 100 R 50 50 1 1 I
 X ~ 2 250 100 100 L 50 50 1 1 O
 X ~ 3 250 -100 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# splitter_coupled_line
+#
+DEF splitter_coupled_line TL 0 40 Y Y 1 F N
+F0 "TL" 0 230 50 H V C CNN
+F1 "splitter_coupled_line" 0 165 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -150 100 150 -50 0 1 0 f
+P 2 0 1 0 150 50 -150 50 N
+P 6 0 1 0 -100 -50 -100 20 -85 35 85 35 100 25 100 -45 N
+X ~ 1 -250 50 100 R 50 50 1 1 B
+X ~ 2 250 50 100 L 50 50 1 1 B
+X ~ 3 100 -150 100 U 50 50 1 1 B
+X ~ 4 -100 -150 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# splitter_fenced
+#
+DEF splitter_fenced TL 0 40 Y Y 1 F N
+F0 "TL" 0 200 50 H V C CNN
+F1 "splitter_fenced" 290 -195 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -150 150 150 -150 0 1 0 f
+P 3 0 1 0 0 -120 -20 -120 20 -120 N
+P 3 0 1 0 0 -105 -5 -105 5 -105 N
+P 4 0 1 0 0 -150 0 -135 -35 -135 35 -135 N
+P 5 0 1 0 -150 0 0 0 150 100 0 0 150 -100 N
+X ~ 1 -250 0 100 R 50 50 1 1 I
+X ~ 2 250 100 100 L 50 50 1 1 O
+X ~ 3 250 -100 100 L 50 50 1 1 O
+X ~ 5 0 -250 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
