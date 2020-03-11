@@ -1,4 +1,4 @@
-(module HMC-LP4 (layer F.Cu) (tedit 5E64754B)
+(module HMC-LP4 (layer F.Cu) (tedit 5E67DE1E)
   (fp_text reference REF** (at 0 -3.475) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -138,7 +138,7 @@
   (fp_line (start 1.4 -2) (end 1.4 -2) (layer F.Fab) (width 0.1524))
   (fp_line (start 1.1 -2) (end 1.4 -2) (layer F.Fab) (width 0.1524))
   (fp_line (start -2 -0.73) (end -0.73 -2) (layer F.Fab) (width 0.1524))
-  (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0) (layer Cmts.User)
+  (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0) (layer Cmts.User) hide
     (effects (font (size 0.127 0.127) (thickness 0.002)))
   )
   (fp_circle (center -2.525 -2.525) (end -2.575 -2.55) (layer F.SilkS) (width 0.12))

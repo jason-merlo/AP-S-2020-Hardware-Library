@@ -42,6 +42,12 @@ K single opamp
 F http://www.ti.com/lit/ds/symlink/opa227.pdf
 $ENDCMP
 #
+$CMP OPA192-SOT
+D Single Low-Noise Operational Amplifiers, DIP-8/SOIC-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/opa227.pdf
+$ENDCMP
+#
 $CMP OPA227
 D Single Low-Noise Operational Amplifiers, DIP-8/SOIC-8
 K single opamp
